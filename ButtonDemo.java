@@ -1,0 +1,115 @@
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+class ButtonDemo{
+    public static void main(String[] args) {
+        Frame f=new Frame("Calculator");
+        f.setBackground(Color.darkGray);
+        f.setSize(280,350);
+        
+        Button b=new Button("AC");
+        b.setBounds(20,100,50,30);
+        b.setBackground(Color.WHITE);
+        b.setForeground(Color.BLUE);
+        f.add(b);
+        Button b1=new Button("DE");
+        b1.setBounds(80,100,50,30);
+        b1.setBackground(Color.WHITE);
+        b1.setForeground(Color.BLUE);
+        f.add(b1);
+        Button b2=new Button(".");
+        b2.setBounds(140,100,50,30);
+        b2.setBackground(Color.WHITE);
+        b2.setForeground(Color.BLUE);
+        f.add(b2);
+        Button b3=new Button("/");
+        b3.setBounds(200,100,50,30);
+        b3.setBackground(Color.WHITE);
+        b3.setForeground(Color.BLUE);
+        f.add(b3);
+        Button b4=new Button("7");
+        b4.setBounds(20,150,50,30);
+        b4.setBackground(Color.WHITE);
+        b4.setForeground(Color.orange);
+        f.add(b4);
+        Button b5=new Button("8");
+        b5.setBounds(80,150,50,30);
+        b5.setBackground(Color.WHITE);
+        b5.setForeground(Color.orange);
+        f.add(b5);
+        Button b6=new Button("9");
+        b6.setBounds(140,150,50,30);
+        b6.setBackground(Color.WHITE);
+        b6.setForeground(Color.orange);
+        f.add(b6);
+        Button b7=new Button("*");
+        b7.setBounds(200,150,50,30);
+        b7.setBackground(Color.WHITE);
+        b7.setForeground(Color.blue);
+        f.add(b7);
+        Button b8=new Button("4");
+        b8.setBounds(20,200,50,30);
+        b8.setBackground(Color.WHITE);
+        b8.setForeground(Color.orange);
+        f.add(b8);
+        Button b9=new Button("5");
+        b9.setBounds(80,200,50,30);
+        b9.setBackground(Color.WHITE);
+        b9.setForeground(Color.orange);
+        f.add(b9);
+        Button b10=new Button("6");
+        b10.setBounds(140,200,50,30);
+        b10.setBackground(Color.WHITE);
+        b10.setForeground(Color.orange);
+        f.add(b10);
+        Button b11=new Button("-");
+        b11.setBounds(200,200,50,30);
+        b11.setBackground(Color.WHITE);
+        b11.setForeground(Color.blue);
+        f.add(b11);
+        Button b12=new Button("1");
+        b12.setBounds(20,250,50,30);
+        b12.setBackground(Color.WHITE);
+        b12.setForeground(Color.orange);
+        f.add(b12);
+        Button b13=new Button("2");
+        b13.setBounds(80,250,50,30);
+        b13.setBackground(Color.WHITE);
+        b13.setForeground(Color.orange);
+        f.add(b13);
+        Button b14=new Button("3");
+        b14.setBounds(140,250,50,30);
+        b14.setBackground(Color.WHITE);
+        b14.setForeground(Color.orange);
+        f.add(b14);
+        Button b15=new Button("+");
+        b15.setBounds(200,250,50,30);
+        b15.setBackground(Color.WHITE);
+        b15.setForeground(Color.blue);
+        f.add(b15);
+        Button b16=new Button("00");
+        b16.setBounds(20,300,50,30);
+        b16.setBackground(Color.WHITE);
+        b16.setForeground(Color.orange);
+        f.add(b16);
+        Button b17=new Button("0");
+        b17.setBounds(80,300,50,30);
+        b17.setBackground(Color.WHITE);
+        b17.setForeground(Color.orange);
+        f.add(b17);
+        Button b18=new Button("=");
+        b18.setBounds(140,300,100,30);
+        b18.setBackground(Color.WHITE);
+        b18.setForeground(Color.blue);
+        f.add(b18);
+        f.setLayout(null);
+        f.setVisible(true);
+        f.addWindowListener(new WindowAdapter(){
+            @Override
+            public void windowClosing(WindowEvent e){
+                f.dispose();
+            }
+        });
+
+    }
+}
